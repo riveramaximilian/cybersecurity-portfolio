@@ -81,11 +81,43 @@ Investigated two potential security incidents using SQL filters against an organ
 
 ---
 
+### 5. Vulnerability Assessment Report
+**Type:** Risk Assessment & Remediation Planning
+**Framework:** NIST SP 800-30 | CVE | CVSS
+
+Performed a vulnerability assessment on an organization's publicly accessible MySQL database server running on Linux. Evaluated three threat scenarios using NIST SP 800-30 likelihood and severity ratings, identified root causes tied to authentication gaps and missing access controls, and produced a prioritized remediation plan.
+
+**Key Findings:**
+- Unauthorized data exfiltration rated Critical (likelihood 3 x severity 3 = 9) due to no authentication requirement and open internet exposure
+- Competitor denial of service rated High (2 x 3 = 6) due to single point of failure and no rate limiting
+- Insider data alteration/deletion rated Moderate (2 x 2 = 4) due to lack of role-based access controls
+- Remediation focused on MFA, IP allowlisting, TLS encryption, and least privilege access
+
+[View Report](incident-reports/Vulnerability_Assessment_Report.pdf)
+
+---
+
+### 6. Incident Handler's Journal
+**Type:** Incident Documentation & Tool Exploration
+**Framework:** NIST Incident Response Lifecycle
+
+Maintained a four-entry security journal documenting incident investigations and tool exploration across the Detection and Analysis and Containment, Eradication, and Recovery phases. Entries cover a ransomware attack on a healthcare clinic, a spear phishing campaign targeting a CFO, and hands-on exploration of Suricata IDS and Wazuh SIEM.
+
+**Key Entries:**
+- Ransomware at a healthcare clinic: analyzed attack vector, impact, and recovery gaps including missing backups and no network segmentation
+- Spear phishing at Imaginary Bank: dissected a targeted email using domain analysis and URL inspection to confirm malicious intent
+- Suricata: reviewed rule syntax (action, header, options), EVE JSON output, and flow-based filtering
+- Wazuh: queried indexed SSH login failures to identify a brute force pattern against the root account
+
+[View Journal](incident-reports/Incident_Handlers_Journal.pdf)
+
+---
+
 ## Skills & Tools
 
-- **Frameworks:** NIST CSF, NIST RMF, PCI DSS, GDPR, SOC 1/2, HIPAA
-- **Concepts:** CIA Triad, Risk Assessment, Access Control, Threat Modeling, Security Auditing, Linux File Permissions
-- **Tools (in progress):** Wireshark, Linux CLI, SQL, SIEM basics
+- **Frameworks:** NIST CSF, NIST RMF, NIST SP 800-30, PCI DSS, GDPR, SOC 1/2, HIPAA
+- **Concepts:** CIA Triad, Risk Assessment, Vulnerability Management, Access Control, Threat Modeling, Security Auditing, Incident Response, Linux File Permissions
+- **Tools (in progress):** Wireshark, Linux CLI, SQL, Suricata, Wazuh, SIEM basics
 - **Background Tools:** SAP, AIMS, SmartSolve, SQL, Excel (Advanced)
 
 ---
