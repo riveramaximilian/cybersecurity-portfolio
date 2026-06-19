@@ -63,6 +63,24 @@ Audited and corrected file system permissions for a research team on a Linux env
 
 ---
 
+### 4. Apply Filters to SQL Queries
+**Type:** Database Investigation & Security Analysis
+**Tools:** SQL (MariaDB) | AND, OR, NOT, LIKE operators
+
+Investigated two potential security incidents using SQL filters against an organization's login attempt and employee machine database. Wrote targeted queries to isolate after-hours failed logins, suspicious date-range activity, and logins originating outside of Mexico. Also queried employee tables to identify machines in specific departments and office locations for security update deployment.
+
+**Key Actions:**
+- Filtered failed login attempts after 18:00 using AND with a time comparison
+- Retrieved login activity across a two-day window using OR on date values
+- Excluded Mexican login attempts using NOT with LIKE and the % wildcard
+- Isolated Marketing employees in East building offices using AND with pattern matching
+- Retrieved Finance and Sales employees using OR across department values
+- Identified all non-IT employees using NOT for department-wide exclusion
+
+[View Report](incident-reports/Apply_Filters_to_SQL_Queries.pdf)
+
+---
+
 ## Skills & Tools
 
 - **Frameworks:** NIST CSF, NIST RMF, PCI DSS, GDPR, SOC 1/2, HIPAA
