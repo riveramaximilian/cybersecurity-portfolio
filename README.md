@@ -1,14 +1,14 @@
 # Cybersecurity Portfolio
 
-**Maximilian Rivera** | Supply Chain Risk & Compliance | Transitioning to Cybersecurity
+**Maximilian Rivera** | Supply Chain Risk & Compliance | GRC & Security Operations
 
 ---
 
 ## About Me
 
-Air Force veteran with 15+ years in supply chain risk management, compliance, and data integrity. Currently completing the **Google Cybersecurity Certificate** (Coursera) to formalize my transition into GRC, risk analysis, and security operations. I bring a compliance-first mindset built in regulated environments - Cardinal Health, federal supply chains, and DoD-adjacent logistics - where data accuracy and access control aren't optional.
+Air Force veteran with 15+ years in supply chain risk management, compliance, and data integrity. Completed the **Google Cybersecurity Certificate** (Coursera, June 2026) to formalize my transition into GRC, risk analysis, and security operations. I bring a compliance-first mindset built in regulated environments - Cardinal Health, federal supply chains, and DoD-adjacent logistics - where data accuracy and access control aren't optional.
 
-Prior U.S. government security clearance. FEMA IS-700 and IS-800 certified. Lean Six Sigma Yellow Belt. Now building hands-on security skills to match the operational background.
+Prior U.S. government security clearance. FEMA IS-700 and IS-800 certified. Lean Six Sigma Yellow Belt. Built hands-on security skills across threat modeling, incident response, network traffic analysis, Linux, SQL, SIEM platforms, and Python automation.
 
 ---
 
@@ -113,18 +113,35 @@ Maintained a four-entry security journal documenting incident investigations and
 
 ---
 
+### 7. Algorithm for File Updates in Python
+**Type:** Python Automation & File Management
+**Concepts:** File I/O | String Parsing | Access Control Automation
+
+Developed a Python algorithm to automate updates to an IP allow list used for access control. The script reads the current allow list from a file, parses the contents into a list, removes any IP addresses present on a remove list, and writes the updated allow list back to the file. Demonstrates practical automation of a routine security operations task.
+
+**Key Actions:**
+- Opened and read file contents using `with open()` and `.read()`
+- Converted file string to a list using `.split()` for individual IP processing
+- Iterated through the remove list and conditionally removed matching entries
+- Converted the updated list back to a string with `.join()` and wrote to file
+- Applied the principle of least privilege by ensuring only authorized IPs retain access
+
+[View Report](incident-reports/Algorithm_for_File_Updates_in_Python.pdf)
+
+---
+
 ## Skills & Tools
 
 - **Frameworks:** NIST CSF, NIST RMF, NIST SP 800-30, PCI DSS, GDPR, SOC 1/2, HIPAA
-- **Concepts:** CIA Triad, Risk Assessment, Vulnerability Management, Access Control, Threat Modeling, Security Auditing, Incident Response, Linux File Permissions
-- **Tools (in progress):** Wireshark, Linux CLI, SQL, Suricata, Wazuh, SIEM basics
+- **Concepts:** CIA Triad, Risk Assessment, Vulnerability Management, Access Control, Threat Modeling, Security Auditing, Incident Response, Linux File Permissions, Python Automation
+- **Tools:** Wireshark, Linux CLI, SQL, Suricata, Wazuh, Splunk (SPL), Chronicle (YARA-L), tcpdump, Python
 - **Background Tools:** SAP, AIMS, SmartSolve, SQL, Excel (Advanced)
 
 ---
 
 ## Certifications
 
-- Google Cybersecurity Certificate *(in progress - Coursera, 2026)*
+- Google Cybersecurity Certificate *(Coursera, June 2026)*
 - FEMA IS-700: National Incident Management System (June 2026)
 - FEMA IS-800: National Response Framework (June 2026)
 - Lean Six Sigma Yellow Belt
