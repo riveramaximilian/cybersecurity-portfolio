@@ -128,6 +128,32 @@ Developed a Python algorithm to automate updates to an IP allow list used for ac
 
 [View Report](incident-reports/Algorithm_for_File_Updates_in_Python.pdf)
 
+
+---
+
+### 8. VoltEdge Systems GRC Lab — Risk Register, BIA & RACI Matrix
+**Type:** GRC Documentation | Risk Management
+**Concepts:** Risk Assessment | Business Impact Analysis | RACI | NIST SP 800-30 | SOC 2 | CCPA
+
+Built a complete GRC documentation package for VoltEdge Systems, Inc., a fictional EV fleet management company. Simulated a real-world risk and compliance program from scratch, covering risk identification, business continuity planning, and control ownership accountability.
+
+**Deliverables:**
+- **Risk Register:** 15 risks scored by Likelihood × Impact (1–5 scale), categorized Critical/High/Moderate/Low, mapped to NIST 800-53 Rev 5 controls using NIST SP 800-30 methodology
+- **Business Impact Analysis (BIA):** 10 business functions ranked by criticality with defined RTO, RPO, and financial impact per hour of downtime (up to $25K/hr for the fleet management platform)
+- **RACI Matrix:** 15 security controls mapped across 10 organizational roles, with a Named Owner column deliberately unassigned to illustrate how department-level accountability creates diffuse responsibility in practice
+
+---
+
+### 9. VoltEdge Systems Policy Writing Samples
+**Type:** Security Policy | GRC Documentation
+**Concepts:** Acceptable Use | Incident Response | Policy Governance | NIST SP 800-61 | SOC 2 | CCPA
+
+Drafted two enterprise security policies for VoltEdge Systems aligned with NIST SP 800-61 and SOC 2 Type 2 requirements. Demonstrates the ability to translate control frameworks into clear, enforceable organizational policy.
+
+- **Acceptable Use Policy (VS-SEC-001):** Covers authorized and prohibited use of IT resources, remote access and BYOD requirements, monitoring expectations, and enforcement procedures
+- **Incident Response Policy (VS-SEC-002):** Defines four-tier severity classification (SEV-1 through SEV-4), IRT roles and responsibilities, the full IR lifecycle from Preparation through Post-Incident Review, evidence handling, and regulatory notification timelines under CCPA
+
+[View Acceptable Use Policy](policies/VoltEdge_Acceptable_Use_Policy.pdf) | [View Incident Response Policy](policies/VoltEdge_Incident_Response_Policy.pdf)
 ---
 
 ## Skills & Tools
