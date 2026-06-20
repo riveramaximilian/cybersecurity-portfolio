@@ -1,18 +1,18 @@
 # Cybersecurity Portfolio
 
-**Maximilian Rivera** | Supply Chain Risk & Compliance | GRC & Security Operations
+**Maximilian Rivera** | Security Operations & Incident Response | GRC & Compliance
 
 ---
 
 ## About Me
 
-Air Force veteran with 15+ years in supply chain risk management, compliance, and data integrity. Completed the **Google Cybersecurity Certificate** (Coursera, June 2026) to formalize my transition into GRC, risk analysis, and security operations. I bring a compliance-first mindset built in regulated environments - Cardinal Health, federal supply chains, and DoD-adjacent logistics - where data accuracy and access control aren't optional.
+Air Force veteran with a prior government clearance and 15 years building reliable systems in environments where errors have consequences. Google Cybersecurity Certificate completed June 2026. I have designed processes from scratch, cut error rates by 30 percent in a regulated healthcare environment, and built GRC documentation across NIST, HIPAA, PCI DSS, and SOC 2.
 
-Prior U.S. government security clearance. FEMA IS-700 and IS-800 certified. Lean Six Sigma Yellow Belt. Built hands-on security skills across threat modeling, incident response, network traffic analysis, Linux, SQL, SIEM platforms, and Python automation.
+I detect anomalies, investigate alerts, and document findings end to end. Trained in NIST SP 800-61 incident response, IDS rule tuning, and threat detection across Splunk, Chronicle, Wazuh, and Suricata. Lean Six Sigma Yellow Belt.
 
 ---
 
-## Portfolio Projects
+## Independent Projects
 
 ### 1. Internal Security Audit - Meridian Health Group
 **Type:** Controls & Compliance Assessment
@@ -35,7 +35,7 @@ Conducted a simulated internal IT security audit for a mid-sized healthcare orga
 **Type:** Incident Response & Analysis
 **Framework:** NIST Cybersecurity Framework (CSF)
 
-Analyzed a denial of service attack in which a malicious actor flooded an organization's internal network with ICMP packets through an unconfigured firewall, causing a two-hour outage. Applied all five NIST CSF functions — Identify, Protect, Detect, Respond, and Recover — to document the incident and establish a remediation plan.
+Analyzed a denial of service attack in which a malicious actor flooded an organization's internal network with ICMP packets through an unconfigured firewall, causing a two-hour outage. Applied all five NIST CSF functions to document the incident and establish a remediation plan.
 
 **Key Actions:**
 - Identified misconfigured firewall as the root vulnerability
@@ -51,30 +51,27 @@ Analyzed a denial of service attack in which a malicious actor flooded an organi
 **Type:** Linux Authorization & Access Control
 **Concepts:** Principle of Least Privilege | chmod | File Permission Strings
 
-Audited and corrected file system permissions for a research team on a Linux environment. Used `ls -la` to identify permission mismatches against organizational policy, then applied `chmod` to remove unauthorized write access, secure a hidden archived file, and restrict a directory to its owner only.
+Audited and corrected file system permissions for a research team on a Linux environment. Used ls -la to identify permission mismatches against organizational policy, then applied chmod to remove unauthorized write access, secure a hidden archived file, and restrict a directory to its owner only.
 
 **Key Actions:**
-- Removed write access for others on project_k.txt (`chmod o-w`)
-- Secured hidden file .project_x.txt to read-only for user and group (`chmod u-w,g-w,g+r`)
-- Restricted drafts directory to owner only (`chmod g-x`)
+- Removed write access for others on project_k.txt (chmod o-w)
+- Secured hidden file .project_x.txt to read-only for user and group (chmod u-w,g-w,g+r)
+- Restricted drafts directory to owner only (chmod g-x)
 - Interpreted and documented 10-character Linux permission strings
 
 [View Report](incident-reports/File_Permissions_in_Linux.pdf)
-
----
 
 ### 4. Apply Filters to SQL Queries
 **Type:** Database Investigation & Security Analysis
 **Tools:** SQL (MariaDB) | AND, OR, NOT, LIKE operators
 
-Investigated two potential security incidents using SQL filters against an organization's login attempt and employee machine database. Wrote targeted queries to isolate after-hours failed logins, suspicious date-range activity, and logins originating outside of Mexico. Also queried employee tables to identify machines in specific departments and office locations for security update deployment.
+Investigated two potential security incidents using SQL filters against an organization's login attempt and employee machine database. Wrote targeted queries to isolate after-hours failed logins, suspicious date-range activity, and logins originating outside of Mexico.
 
 **Key Actions:**
 - Filtered failed login attempts after 18:00 using AND with a time comparison
 - Retrieved login activity across a two-day window using OR on date values
 - Excluded Mexican login attempts using NOT with LIKE and the % wildcard
 - Isolated Marketing employees in East building offices using AND with pattern matching
-- Retrieved Finance and Sales employees using OR across department values
 - Identified all non-IT employees using NOT for department-wide exclusion
 
 [View Report](incident-reports/Apply_Filters_to_SQL_Queries.pdf)
@@ -85,92 +82,74 @@ Investigated two potential security incidents using SQL filters against an organ
 **Type:** Risk Assessment & Remediation Planning
 **Framework:** NIST SP 800-30 | CVE | CVSS
 
-Performed a vulnerability assessment on an organization's publicly accessible MySQL database server running on Linux. Evaluated three threat scenarios using NIST SP 800-30 likelihood and severity ratings, identified root causes tied to authentication gaps and missing access controls, and produced a prioritized remediation plan.
+Performed a vulnerability assessment on an organization's publicly accessible MySQL database server running on Linux. Evaluated three threat scenarios using NIST SP 800-30 likelihood and severity ratings and produced a prioritized remediation plan.
 
 **Key Findings:**
-- Unauthorized data exfiltration rated Critical (likelihood 3 x severity 3 = 9) due to no authentication requirement and open internet exposure
-- Competitor denial of service rated High (2 x 3 = 6) due to single point of failure and no rate limiting
-- Insider data alteration/deletion rated Moderate (2 x 2 = 4) due to lack of role-based access controls
+- Unauthorized data exfiltration rated Critical (likelihood 3 x severity 3 = 9)
+- Competitor denial of service rated High (2 x 3 = 6) due to single point of failure
+- Insider data alteration rated Moderate (2 x 2 = 4) due to lack of role-based access controls
 - Remediation focused on MFA, IP allowlisting, TLS encryption, and least privilege access
 
 [View Report](incident-reports/Vulnerability_Assessment_Report.pdf)
-
----
 
 ### 6. Incident Handler's Journal
 **Type:** Incident Documentation & Tool Exploration
 **Framework:** NIST Incident Response Lifecycle
 
-Maintained a four-entry security journal documenting incident investigations and tool exploration across the Detection and Analysis and Containment, Eradication, and Recovery phases. Entries cover a ransomware attack on a healthcare clinic, a spear phishing campaign targeting a CFO, and hands-on exploration of Suricata IDS and Wazuh SIEM.
+Maintained a four-entry security journal documenting incident investigations and tool exploration. Entries cover a ransomware attack on a healthcare clinic, a spear phishing campaign, and hands-on use of Suricata IDS and Wazuh SIEM.
 
 **Key Entries:**
-- Ransomware at a healthcare clinic: analyzed attack vector, impact, and recovery gaps including missing backups and no network segmentation
-- Spear phishing at Imaginary Bank: dissected a targeted email using domain analysis and URL inspection to confirm malicious intent
-- Suricata: reviewed rule syntax (action, header, options), EVE JSON output, and flow-based filtering
-- Wazuh: queried indexed SSH login failures to identify a brute force pattern against the root account
+- Ransomware at a healthcare clinic: analyzed attack vector, impact, and recovery gaps
+- Spear phishing at Imaginary Bank: dissected a targeted email to confirm malicious intent
+- Suricata: reviewed rule syntax, EVE JSON output, and flow-based filtering
+- Wazuh: queried indexed SSH login failures to identify a brute force pattern against root
 
 [View Journal](incident-reports/Incident_Handlers_Journal.pdf)
-
----
 
 ### 7. Algorithm for File Updates in Python
 **Type:** Python Automation & File Management
 **Concepts:** File I/O | String Parsing | Access Control Automation
 
-Developed a Python algorithm to automate updates to an IP allow list used for access control. The script reads the current allow list from a file, parses the contents into a list, removes any IP addresses present on a remove list, and writes the updated allow list back to the file. Demonstrates practical automation of a routine security operations task.
+Developed a Python algorithm to automate updates to an IP allow list used for access control. The script reads the current allow list, removes flagged IPs, and writes the updated list back to file.
 
 **Key Actions:**
-- Opened and read file contents using `with open()` and `.read()`
-- Converted file string to a list using `.split()` for individual IP processing
-- Iterated through the remove list and conditionally removed matching entries
-- Converted the updated list back to a string with `.join()` and wrote to file
-- Applied the principle of least privilege by ensuring only authorized IPs retain access
+- Read and parsed file contents using with open() and .split()
+- Iterated through remove list and conditionally removed matching entries
+- Applied principle of least privilege by ensuring only authorized IPs retain access
 
 [View Report](incident-reports/Algorithm_for_File_Updates_in_Python.pdf)
 
-
----
-
-### 8. VoltEdge Systems GRC Lab — Risk Register, BIA & RACI Matrix
+### 8. VoltEdge Systems GRC Lab
 **Type:** GRC Documentation | Risk Management
-**Concepts:** Risk Assessment | Business Impact Analysis | RACI | NIST SP 800-30 | SOC 2 | CCPA
+**Concepts:** NIST SP 800-30 | SOC 2 | CCPA | Risk Register | BIA | RACI
 
-Built a complete GRC documentation package for VoltEdge Systems, Inc., a fictional EV fleet management company. Simulated a real-world risk and compliance program from scratch, covering risk identification, business continuity planning, and control ownership accountability.
+Built a complete GRC documentation package for a fictional EV fleet management company from scratch. Risk register (15 risks), business impact analysis (10 functions, RTO/RPO/financial impact), and RACI matrix (15 controls x 10 roles) - all structured for an actual audit.
 
-**Deliverables:**
-- **Risk Register:** 15 risks scored by Likelihood × Impact (1–5 scale), categorized Critical/High/Moderate/Low, mapped to NIST 800-53 Rev 5 controls using NIST SP 800-30 methodology
-- **Business Impact Analysis (BIA):** 10 business functions ranked by criticality with defined RTO, RPO, and financial impact per hour of downtime (up to $25K/hr for the fleet management platform)
-- **RACI Matrix:** 15 security controls mapped across 10 organizational roles, with a Named Owner column deliberately unassigned to illustrate how department-level accountability creates diffuse responsibility in practice
-
----
-
-### 9. VoltEdge Systems Policy Writing Samples
+### 9. VoltEdge Systems Policy Writing
 **Type:** Security Policy | GRC Documentation
-**Concepts:** Acceptable Use | Incident Response | Policy Governance | NIST SP 800-61 | SOC 2 | CCPA
+**Concepts:** NIST SP 800-61 | SOC 2 | CCPA | Acceptable Use | Incident Response
 
-Drafted two enterprise security policies for VoltEdge Systems aligned with NIST SP 800-61 and SOC 2 Type 2 requirements. Demonstrates the ability to translate control frameworks into clear, enforceable organizational policy.
+Wrote two enterprise security policies aligned to NIST SP 800-61 and SOC 2 - an Acceptable Use Policy and a four-tier Incident Response Policy covering the full IR lifecycle, evidence handling, and CCPA notification timelines.
 
-- **Acceptable Use Policy (VS-SEC-001):** Covers authorized and prohibited use of IT resources, remote access and BYOD requirements, monitoring expectations, and enforcement procedures
-- **Incident Response Policy (VS-SEC-002):** Defines four-tier severity classification (SEV-1 through SEV-4), IRT roles and responsibilities, the full IR lifecycle from Preparation through Post-Incident Review, evidence handling, and regulatory notification timelines under CCPA
+[View Acceptable Use Policy](Policies/VoltEdge_Acceptable_Use_Policy.pdf) | [View Incident Response Policy](Policies/VoltEdge_Incident_Response_Policy.pdf)
 
-[View Acceptable Use Policy](policies/VoltEdge_Acceptable_Use_Policy.pdf) | [View Incident Response Policy](policies/VoltEdge_Incident_Response_Policy.pdf)
 ---
 
 ## Skills & Tools
 
-- **Frameworks:** NIST CSF, NIST RMF, NIST SP 800-30, PCI DSS, GDPR, SOC 1/2, HIPAA
-- **Concepts:** CIA Triad, Risk Assessment, Vulnerability Management, Access Control, Threat Modeling, Security Auditing, Incident Response, Linux File Permissions, Python Automation
-- **Tools:** Wireshark, Linux CLI, SQL, Suricata, Wazuh, Splunk (SPL), Chronicle (YARA-L), tcpdump, Python
-- **Background Tools:** SAP, AIMS, SmartSolve, SQL, Excel (Advanced)
+- **Security Tools:** Splunk (SPL) - Chronicle (YARA-L) - Wazuh - Suricata - Wireshark - tcpdump - Linux CLI - SQL (MariaDB) - Python - Microsoft Entra ID
+- **Security Operations:** Incident Response (NIST SP 800-61) - IDS Rule Tuning - Threat Detection - Vulnerability Assessment - Threat Modeling - CIA Triad - Access Control
+- **GRC & Compliance:** NIST CSF - NIST RMF - NIST SP 800-30/800-53 - PCI DSS - GDPR - SOC 2 - HIPAA - Risk Register - Business Impact Analysis - RACI Matrix - Policy Writing
+- **Enterprise Systems:** SAP - AIMS - SmartSolve - Microsoft Office (Advanced Excel) - RF Warehouse Systems
 
 ---
 
 ## Certifications
 
-- Google Cybersecurity Certificate *(Coursera, June 2026)*
-- FEMA IS-700: National Incident Management System (June 2026)
-- FEMA IS-800: National Response Framework (June 2026)
-- Lean Six Sigma Yellow Belt
+- Google Cybersecurity Certificate - Coursera, June 2026
+- SC-900: Microsoft Security, Compliance & Identity Fundamentals - June 2026
+- Lean Six Sigma Yellow Belt - Cardinal Health, 2023
+- Prior U.S. Government Security Clearance - U.S. Air Force, 2007-2011
 
 ---
 
