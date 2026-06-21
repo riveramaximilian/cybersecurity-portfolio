@@ -191,11 +191,31 @@ Built a comprehensive compliance mapping matrix for Lakewood Regional Medical Ce
 
 ---
 
+### 12. Zero Trust Identity & Access Management Lab — Meridian Health Group
+**Type:** Identity & Access Management | Microsoft Entra ID | Zero Trust Architecture
+**Frameworks:** NIST SP 800-207 Zero Trust Architecture | HIPAA Security Rule | NIST CSF 2.0 | CIS Controls v8
+
+Built a full identity and access management (IAM) lab for a simulated healthcare organization using Microsoft Entra ID. The goal was simple: make sure the right people have access to the right things — and nobody has more access than they need for their job.
+
+Set up 10 user accounts across 6 departments, organized them into 10 security groups, and assigned roles based on least privilege. Enabled multi-factor authentication for all users. Documented 7 conditional access policies that control who can log in, from where, and on what device. Built an access review process and a full Joiners-Movers-Leavers workflow so the organization always knows who has access and why.
+
+**Key Actions:**
+- Created 10 user accounts (employees, service accounts, external vendor) with role-based access control and least privilege applied to every role
+- Configured 10 security groups used to target authentication policies and Microsoft 365 permissions
+- Documented 7 Conditional Access policies — MFA for all users, blocking outdated login methods, geo-restricting access to the US, requiring compliant devices for admin accounts, and restricting vendor access
+- Built a Joiners-Movers-Leavers (JML) workflow with defined timelines: accounts enabled within 24 hours of hire, disabled within 4 hours of termination
+- Completed two quarterly access review cycles — reviewed every role assignment, documented decisions, and removed access that was no longer needed
+- Identified 6 security findings with risk ratings and a prioritized fix plan aligned to HIPAA and NIST
+
+[View IAM Lab Report](zero-trust-iam-lab/MHG_ZeroTrust_IAM_Lab_Report.docx) | [View RBAC Matrix](zero-trust-iam-lab/MHG_RBAC_Matrix_ZeroTrust_IAM.xlsx)
+
+---
+
 ## Skills & Tools
 
 - **Security Tools:** Splunk (SPL) • Chronicle (YARA-L) • Wazuh • Suricata • Wireshark • tcpdump • Linux CLI • SQL (MariaDB) • Python • Microsoft Entra ID
-- **Security Operations:** Incident Response (NIST SP 800-61) • IDS Rule Tuning • Threat Detection • Vulnerability Assessment • Threat Modeling • CIA Triad • Access Control
-- **GRC & Compliance:** HIPAA Security Rule • NIST CSF • NIST RMF • NIST SP 800-30/800-53 • ISO 27001:2022 • PCI DSS • SOC 2 Type II • Vendor Risk Assessment • Compliance Mapping • Risk Register • Policy Writing
+- **Security Operations:** Incident Response (NIST SP 800-61) • IDS Rule Tuning • Threat Detection • Vulnerability Assessment • Threat Modeling • CIA Triad • Access Control • Identity & Access Management (IAM) • Zero Trust Architecture • RBAC
+- **GRC & Compliance:** HIPAA Security Rule • NIST CSF • NIST RMF • NIST SP 800-30/800-53/800-207 • ISO 27001:2022 • PCI DSS • SOC 2 Type II • Vendor Risk Assessment • Compliance Mapping • Risk Register • Policy Writing
 - **Enterprise Systems:** SAP • AIMS • SmartSolve • Microsoft Office (Advanced Excel) • RF Warehouse Systems
 
 ---
@@ -211,5 +231,5 @@ Built a comprehensive compliance mapping matrix for Lakewood Regional Medical Ce
 
 ## Contact
 
-- **LinkedIn:** [linkedin.com/in/riveramaximilian](https://www.linkedin.com/in/riveramaximilian)
+- **LinkedIn:** [linkedin.com/in/riveramaximilian](https://www.linkedin.com/in/maximilianrivera)
 - **Email:** riveramaximilian@gmail.com
