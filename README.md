@@ -27,7 +27,7 @@ Conducted a simulated internal IT security audit for a mid-sized healthcare orga
 - Partial GDPR compliance — breach notification exists but data classification does not
 - Recommendations focused on encryption, IDS deployment, DR planning, and separation of duties
 
-[View Checklist](Audits/MHG_Checklist.pdf)
+[View Checklist](audits/MHG_Checklist.pdf)
 
 ---
 
@@ -43,7 +43,7 @@ Analyzed a denial-of-service attack in which a threat actor flooded an internal 
 - Deployed IDS/IPS and network monitoring for ongoing detection
 - Staged service restoration prioritizing critical systems first
 
-[View Report](Incident-Reports/NIST_CSF_Portfolio_Report.pdf)
+[View Report](incident-reports/NIST_CSF_Portfolio_Report.pdf)
 
 ---
 
@@ -59,7 +59,7 @@ Investigated a brute force attack and concurrent abnormal network traffic event.
 - Documented timeline, affected systems, and evidence chain
 - Recommended account lockout policies, MFA enforcement, and network segmentation
 
-[View Report](Incident-Reports/Brute_Force_Security_Incident_Report.docx)
+[View Report](incident-reports/Brute_Force_Security_Incident_Report.docx)
 
 ---
 
@@ -75,7 +75,7 @@ Analyzed a SYN flood attack targeting a web-facing server. Identified the attack
 - Recommended SYN cookies, rate limiting, and firewall ACL updates
 - Produced formal incident report with timeline and remediation plan
 
-[View Report](Incident-Reports/SYN_Flood_Incident_Report_Completed.docx)
+[View Report](incident-reports/SYN_Flood_Incident_Report_Completed.docx)
 
 ---
 
@@ -91,7 +91,7 @@ Audited and corrected file system permissions for a research team in a Linux env
 - Restricted drafts directory to owner only (`chmod g-x`)
 - Interpreted and documented 10-character Linux permission strings
 
-[View Report](Incident-Reports/File_Permissions_in_Linux.pdf)
+[View Report](incident-reports/File_Permissions_in_Linux.pdf)
 
 ---
 
@@ -107,7 +107,7 @@ Investigated two potential security incidents using SQL filters against login an
 - Excluded logins from specific country using NOT LIKE with wildcard
 - Isolated employees by department and office location for security update deployment
 
-[View Report](Incident-Reports/Apply_Filters_to_SQL_Queries.pdf)
+[View Report](incident-reports/Apply_Filters_to_SQL_Queries.pdf)
 
 ---
 
@@ -123,7 +123,7 @@ Built a Python algorithm to automate allow-list management for an IP-based acces
 - Iterated through remove list and deleted matching IPs using `.remove()`
 - Rejoined and wrote updated allow list back to file with `.join()` and `.write()`
 
-[View Report](Incident-Reports/Algorithm_for_File_Updates_in_Python.pdf)
+[View Report](incident-reports/Algorithm_for_File_Updates_in_Python.pdf)
 
 ---
 
@@ -139,23 +139,23 @@ Conducted a vulnerability assessment for a simulated organization. Identified at
 - Prioritized findings by risk rating and business impact
 - Produced formal report with remediation roadmap
 
-[View Report](Incident-Reports/Vulnerability_Assessment_Report.pdf)
+[View Report](incident-reports/Vulnerability_Assessment_Report.pdf)
 
 ---
 
-### 9. Policy Development — VoltEdge Systems
-**Type:** GRC | Security Policy Writing
-**Frameworks:** NIST CSF | ISO 27001 | HIPAA-aligned
+### 9. Policy Development & GRC Lab — VoltEdge Systems
+**Type:** GRC | Security Policy Writing | Risk Management
+**Frameworks:** NIST CSF | NIST SP 800-30 | ISO 27001 | HIPAA-aligned
 
-Drafted two production-ready security policies for VoltEdge Systems, a simulated mid-size technology firm. Policies cover acceptable use of company assets and formal incident response procedures, written to be immediately deployable.
+Drafted two production-ready security policies and a full GRC risk and compliance package for VoltEdge Systems, a simulated mid-size technology firm. Policies cover acceptable use and formal incident response. GRC package includes risk register, BIA, and RACI matrix.
 
 **Key Actions:**
 - Authored Acceptable Use Policy (AUP) covering device use, data handling, and violation consequences
 - Authored Incident Response Policy aligned with NIST SP 800-61 phases
+- Built risk register, Business Impact Analysis, and RACI matrix to NIST SP 800-30
 - Defined roles, responsibilities, escalation paths, and 72-hour breach notification triggers
-- Formatted for HR distribution and management sign-off
 
-[View AUP](Policies/VoltEdge_Acceptable_Use_Policy.pdf) | [View IR Policy](Policies/VoltEdge_Incident_Response_Policy.pdf)
+[View AUP](policies/VoltEdge_Acceptable_Use_Policy.pdf) | [View IR Policy](policies/VoltEdge_Incident_Response_Policy.pdf) | [View GRC Workbook](policies/VoltEdge_GRC_Risk_Compliance_Package.xlsx)
 
 ---
 
@@ -171,7 +171,7 @@ Conducted a full third-party vendor risk assessment for ClearPath Health, Inc., 
 - 71% overall questionnaire compliance across 6 security domains
 - Issued conditional approval with 90-day remediation plan and 15/30-day hard deadlines
 
-[View Assessment](GRC/Vendor_Risk_Assessment_ClearPath_Health.pdf)
+[View Assessment](vendor-risk-assessment/Vendor_Risk_Assessment_ClearPath_Health.pdf)
 
 ---
 
@@ -187,7 +187,7 @@ Built a comprehensive compliance mapping matrix for Lakewood Regional Medical Ce
 - Summary dashboard with compliance rates by HIPAA safeguard type and NIST CSF function
 - Document control and high-priority gap tracking for executive reporting
 
-[View Matrix](GRC/Healthcare_Compliance_Mapping_Matrix.xlsx)
+[View Matrix](compliance-matrix/Healthcare_Compliance_Mapping_Matrix.xlsx)
 
 ---
 
