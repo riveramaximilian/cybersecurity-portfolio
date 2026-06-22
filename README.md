@@ -6,9 +6,7 @@
 
 ## About Me
 
-Air Force veteran with a prior government security clearance and 15 years building reliable systems in environments where errors have consequences. Google Cybersecurity Certificate completed June 2026. I have designed processes from scratch, cut error rates by 30 percent in a regulated healthcare environment, and built GRC documentation across HIPAA, NIST, ISO 27001, SOC 2, and PCI DSS.
-
-I detect anomalies, investigate alerts, and document findings end to end. Trained in NIST SP 800-61 incident response, IDS rule tuning, and threat detection across Splunk, Chronicle, Wazuh, and Suricata. Lean Six Sigma Yellow Belt. Targeting roles in GRC & Compliance, HIPAA/Healthcare Security, Cyber Fraud Analysis, and Security Operations.
+U.S. Air Force veteran with a prior U.S. government security clearance and a background in compliance operations, audit documentation, and regulatory adherence in high-stakes environments. Google Cybersecurity Certificate, June 2026. Served as compliance lead for QA product hold events in a HIPAA-regulated medical supply chain — collecting evidence, applying quarantine controls, maintaining audit trails, and safeguarding PHI in coordination with regional management. Built GRC documentation across HIPAA Security Rule, NIST CSF, ISO 27001, PCI DSS, and SOC 2. Lean Six Sigma Yellow Belt. Targeting healthcare compliance, GRC analyst, and HIPAA-focused roles where operational compliance experience and hands-on GRC documentation translate directly to day-one value.
 
 ---
 
