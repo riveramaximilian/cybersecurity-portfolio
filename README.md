@@ -232,6 +232,29 @@ Conducted a full HIPAA Security Risk Analysis for SunRidge Health Partners, a fi
 
 ---
 
+### 13. HIPAA Security Risk Analysis — SunRidge Health Partners
+**Type:** GRC | Security Risk Analysis
+**Frameworks:** HIPAA Security Rule (45 CFR Part 164) | NIST SP 800-30 Rev. 1 | NIST CSF 2.0
+**Risk Register:** 10 risks scored | 3 Critical findings
+
+Conducted a full HIPAA Security Risk Analysis for SunRidge Health Partners, a fictional 85,000-patient health network in Ocala, Central Florida. Inventoried 7 ePHI systems, scored 10 risk scenarios using NIST SP 800-30 Likelihood x Impact methodology, and assessed 30 HIPAA Security Rule controls across Administrative, Physical, and Technical Safeguards.
+
+**Key Findings:**
+- **Critical:** Ransomware threat vector — no DMARC, no phishing simulations, annual-only training (modeled after Ascension Health breach, May 2024)
+- **Critical:** Third-party clearinghouse handling 100% of revenue cycle — BAA unreviewed since 2021, no BCP (Change Healthcare model, 192.7M records)
+- **Critical:** Active tracking pixel PHI disclosure — Google Analytics and Meta Pixel transmitting patient appointment data to ad platforms in violation of HHS OCR bulletin (Kaiser Permanente pattern, 13.4M patients)
+- 47% of assessed controls returned as complete GAP (no adequate control in place)
+
+**Deliverables:**
+- Risk register with 10 scored risk scenarios
+- 30-control HIPAA gap analysis across Administrative, Physical, and Technical Safeguards
+- 4-phase remediation roadmap — 365 days, ~$303,500
+- Executive summary mapped against HHS HIPAA Security Rule NPRM (December 2024)
+
+[View SRA Workbook](hipaa-security-risk-analysis/SunRidge_HIPAA_SRA_2025.xlsx) | [View Executive Report](hipaa-security-risk-analysis/SunRidge_HIPAA_SRA_Executive_Report_2025.docx)
+
+---
+
 ## Skills & Tools
 
 - **Security Tools:** Splunk (SPL) • Chronicle (YARA-L) • Wazuh • Suricata • Wireshark • tcpdump • Linux CLI • SQL (MariaDB) • Python • Microsoft Entra ID
