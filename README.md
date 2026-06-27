@@ -255,6 +255,22 @@ Conducted a full HIPAA Security Risk Analysis for SunRidge Health Partners, a fi
 
 ---
 
+14. SOC 2 Readiness Assessment — Crestline Technology Partners
+
+Type: GRC | SOC 2 Readiness Assessment | Control Evaluation Frameworks: AICPA Trust Services Criteria 2017 (CC6, CC7, CC9) with 2022 Points of Focus | NIST CSF 2.0
+
+End-to-end SOC 2 Type II readiness assessment for Crestline Technology Partners, a simulated mid-size B2B SaaS company (~120 employees) managing HR workflows and payroll data for small business clients preparing for their first audit engagement. Evaluated 22 Trust Services Criteria controls across CC6 (Logical and Physical Access), CC7 (System Operations and Incident Management), and CC9 (Risk Mitigation and Vendor Management). Identified 14 control gaps across three severity levels, issued a formal management letter with a written readiness opinion, and produced a 12-month phased remediation roadmap — structured the same way a client-facing GRC analyst would present findings to an executive sponsor.
+
+Key Findings:
+
+- 3 Critical findings including: orphaned privileged accounts with active payroll system access 18 months post-departure, no MFA on production database, no formal access termination process
+- 6 High findings including: no incident response plan, direct-to-production code deployments with no change tickets or rollback documentation, vendor contracts missing security and data handling requirements across all 6 vendors with client data access
+- 5 Medium findings including: no BCP/DRP with untested backups, no risk register, no security awareness training program
+- Overall readiness opinion: NOT READY for SOC 2 Type II audit engagement
+
+[View Assessment](soc2-readiness-assessment/SOC2-Readiness-Assessment-Crestline-Technology-Partners.pdf)
+
+
 ## Skills & Tools
 
 - **Security Tools:** Splunk (SPL) • Chronicle (YARA-L) • Wazuh • Suricata • Wireshark • tcpdump • Linux CLI • SQL (MariaDB) • Python • Microsoft Entra ID
