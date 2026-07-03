@@ -130,9 +130,27 @@ Set up 10 user accounts across 6 departments, organized into 10 security groups,
 
 ---
 
-## Security Operations Projects
+### 7. SOC 2 Readiness Assessment (Crestline Technology Partners)
 
-### 7. Vulnerability Assessment Report
+**Type:** GRC | Audit Readiness
+**Frameworks:** SOC 2 Type II | Trust Services Criteria (CC6, CC7, CC9)
+
+Ran a SOC 2 readiness assessment ahead of a Type II audit for a mid-size technology firm. Evaluated 22 controls across logical access (CC6), system operations (CC7), and risk mitigation (CC9).
+
+**Key Findings:**
+- Identified 14 control gaps across the three trust services categories evaluated
+- Issued a formal management letter documenting each gap and its associated risk
+- Built a 12-month phased remediation roadmap to close gaps ahead of the audit window
+
+[View Report](#) *(link pending)*
+
+---
+
+## Google Cybersecurity Certificate — Applied Labs
+
+Completed as part of the Google Cybersecurity Certificate program. These labs cover incident response, network analysis, and security fundamentals, and back up the technical literacy behind the GRC work above.
+
+### 8. Vulnerability Assessment Report
 
 **Type:** Risk & Vulnerability Assessment | **Framework:** NIST SP 800-30 | Threat Modeling
 
@@ -148,7 +166,7 @@ Ran a vulnerability assessment for a mid-size organization. Identified attack su
 
 ---
 
-### 8. Incident Report (DoS Attack via ICMP Flood)
+### 9. Incident Report (DoS Attack via ICMP Flood)
 
 **Type:** Incident Response & Analysis | **Framework:** NIST Cybersecurity Framework (CSF)
 
@@ -164,7 +182,7 @@ Analyzed a denial-of-service attack where a threat actor flooded an internal net
 
 ---
 
-### 9. Incident Report (Brute Force & Network Traffic Analysis)
+### 10. Incident Report (Brute Force & Network Traffic Analysis)
 
 **Type:** Security Incident Response | **Tools:** Wireshark | tcpdump | Network Protocol Analysis
 
@@ -180,7 +198,7 @@ Investigated a brute force attack alongside an abnormal network traffic event. C
 
 ---
 
-### 10. Incident Report (SYN Flood Attack Response)
+### 11. Incident Report (SYN Flood Attack Response)
 
 **Type:** Network Security Incident | **Framework:** NIST SP 800-61 | TCP/IP Protocol Analysis
 
@@ -196,51 +214,15 @@ Analyzed a SYN flood attack targeting a web-facing server. Identified the attack
 
 ---
 
-### 11. SQL Filters for Security Investigation
+### 12. Security Fundamentals Practice
 
-**Type:** Database Investigation & Security Analysis | **Tools:** SQL (MariaDB) | AND, OR, NOT, LIKE operators
+**Type:** Coursework Labs | **Tools:** SQL (MariaDB) · Linux CLI · Python
 
-Investigated two potential security incidents using SQL filters against login and employee machine databases. Wrote targeted queries to isolate after-hours failed logins, suspicious date-range activity, and logins from unexpected geographies.
+Three short labs from the certificate coursework, each demonstrating a different fundamental: querying, access control, and automation.
 
-**Key Actions:**
-- Filtered failed login attempts after 18:00 using AND with time comparison
-- Retrieved login activity across a two-day window using OR on date values
-- Excluded logins from a specific country using NOT LIKE with wildcard
-- Isolated employees by department and office location for security update deployment
-
-[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/incident-reports/Apply_Filters_to_SQL_Queries.pdf)
-
----
-
-### 12. File Permissions in Linux
-
-**Type:** Linux Authorization & Access Control | **Concepts:** Principle of Least Privilege | chmod | File Permission Strings
-
-Audited and corrected file system permissions for a research team in a Linux environment. Used `ls -la` to identify permission mismatches against policy, then applied `chmod` to remove unauthorized access and restrict sensitive files.
-
-**Key Actions:**
-- Removed write access for others on project_k.txt (`chmod o-w`)
-- Secured hidden file .project_x.txt to read-only (`chmod u-w,g-w,g+r`)
-- Restricted drafts directory to owner only (`chmod g-x`)
-- Interpreted and documented 10-character Linux permission strings
-
-[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/incident-reports/File_Permissions_in_Linux.pdf)
-
----
-
-### 13. Algorithm for File Updates in Python
-
-**Type:** Security Automation & Python Scripting | **Tools:** Python | File I/O | String Manipulation
-
-Built a Python script to automate allow-list management for an IP-based access control system. It reads an existing allow list, removes IPs on a remove list, and writes the updated list back.
-
-**Key Actions:**
-- Read allow list file contents into a working string using `.read()`
-- Converted the string to a list with `.split()` for iteration
-- Iterated through the remove list and deleted matching IPs using `.remove()`
-- Rejoined and wrote the updated allow list back to file with `.join()` and `.write()`
-
-[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/incident-reports/Algorithm_for_File_Updates_in_Python.pdf)
+- **SQL Filters for Security Investigation:** wrote targeted SQL queries (AND, OR, NOT LIKE) against login and employee databases to isolate after-hours failed logins, suspicious date ranges, and logins from unexpected geographies. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/incident-reports/Apply_Filters_to_SQL_Queries.pdf)
+- **File Permissions in Linux:** audited and corrected file system permissions for a research team, using `ls -la` and `chmod` to remove unauthorized access and enforce least privilege. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/incident-reports/File_Permissions_in_Linux.pdf)
+- **Algorithm for File Updates in Python:** built a script to automate allow-list management for an IP-based access control system, reading, filtering, and rewriting the list programmatically. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/incident-reports/Algorithm_for_File_Updates_in_Python.pdf)
 
 ---
 
