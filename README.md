@@ -114,7 +114,7 @@ Drafted two production-ready security policies and a full GRC risk and complianc
 **Type:** Identity & Access Management | Microsoft Entra ID | Zero Trust Architecture
 **Frameworks:** NIST SP 800-207 Zero Trust Architecture | HIPAA Security Rule | NIST CSF 2.0 | CIS Controls v8
 
-Built a full IAM lab for a healthcare organization using Microsoft Entra ID, with the goal of making sure the right people have access to the right things and nobody has more than they need.
+Building on the Meridian Health Group engagement from Project 3, I extended the audit findings into a full identity and access buildout for the same organization. Built the IAM lab in Microsoft Entra ID with the goal of making sure the right people have access to the right things and nobody has more than they need.
 
 Set up 10 user accounts across 6 departments, organized into 10 security groups, with roles assigned on least privilege. Enabled MFA for all users, documented 7 conditional access policies, and built a full Joiners-Movers-Leavers workflow so the organization always knows who has access and why.
 
@@ -142,11 +142,11 @@ Ran a SOC 2 readiness assessment ahead of a Type II audit for a mid-size technol
 - Issued a formal management letter documenting each gap and its associated risk
 - Built a 12-month phased remediation roadmap to close gaps ahead of the audit window
 
-[View Report](#) *(link pending)*
+[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/soc2-readiness/Crestline_SOC2_Readiness_Assessment.pdf)
 
 ---
 
-## Google Cybersecurity Certificate — Applied Labs
+## Google Cybersecurity Certificate: Applied Labs
 
 Completed as part of the Google Cybersecurity Certificate program. These labs cover incident response, network analysis, and security fundamentals, and back up the technical literacy behind the GRC work above.
 
