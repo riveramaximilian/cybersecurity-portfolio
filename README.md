@@ -68,7 +68,28 @@ Ran an internal IT security audit for a mid-sized healthcare organization. Evalu
 
 ---
 
-### 4. HIPAA Security Risk Analysis (SunRidge Health Partners)
+### 4. Zero Trust Identity & Access Management Lab (Meridian Health Group)
+
+**Type:** Identity & Access Management | Microsoft Entra ID | Zero Trust Architecture
+**Frameworks:** NIST SP 800-207 Zero Trust Architecture | HIPAA Security Rule | NIST CSF 2.0 | CIS Controls v8
+
+Building on the Meridian Health Group audit in Project 3, I extended those findings into a full identity and access buildout for the same organization. Built the IAM lab in Microsoft Entra ID with the goal of making sure the right people have access to the right things and nobody has more than they need.
+
+Set up 10 user accounts across 6 departments, organized into 10 security groups, with roles assigned on least privilege. Enabled MFA for all users, documented 7 conditional access policies, and built a full Joiners-Movers-Leavers workflow so the organization always knows who has access and why.
+
+**Key Actions:**
+- Created 10 user accounts (employees, service accounts, external vendor) with RBAC and least privilege on every role
+- Configured 10 security groups used to target authentication policies and Microsoft 365 permissions
+- Documented 7 Conditional Access policies: MFA for all users, blocking outdated login methods, geo-restricting access, requiring compliant devices for admin accounts, and restricting vendor access
+- Built a JML workflow: accounts enabled within 24 hours of hire, disabled within 4 hours of termination
+- Ran two quarterly access review cycles, reviewed every role assignment, documented decisions, and removed unneeded access
+- Flagged 6 security findings with risk ratings and a prioritized fix plan aligned to HIPAA and NIST
+
+[View IAM Lab Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/zero-trust-iam-lab/MHG_ZeroTrust_IAM_Lab_Report.docx) | [View RBAC Matrix](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/zero-trust-iam-lab/MHG_RBAC_Matrix_ZeroTrust_IAM.xlsx)
+
+---
+
+### 5. HIPAA Security Risk Analysis (SunRidge Health Partners)
 
 **Type:** GRC | Security Risk Analysis
 **Frameworks:** HIPAA Security Rule (45 CFR Part 164) | NIST SP 800-30 Rev. 1 | NIST CSF 2.0
@@ -92,7 +113,7 @@ Ran a full HIPAA Security Risk Analysis for an 85,000-patient health network. In
 
 ---
 
-### 5. Policy Development & GRC Lab (VoltEdge Systems)
+### 6. Policy Development & GRC Lab (VoltEdge Systems)
 
 **Type:** GRC | Security Policy Writing | Risk Management
 **Frameworks:** NIST CSF | NIST SP 800-30 | ISO 27001 | HIPAA-aligned
@@ -106,27 +127,6 @@ Drafted two production-ready security policies and a full GRC risk and complianc
 - Defined roles, responsibilities, escalation paths, and 72-hour breach notification triggers
 
 [View AUP](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/policies/VoltEdge_Acceptable_Use_Policy.pdf) | [View IR Policy](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/policies/VoltEdge_Incident_Response_Policy.pdf) | [View GRC Workbook](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/policies/VoltEdge_GRC_Risk_Compliance_Package.xlsx)
-
----
-
-### 6. Zero Trust Identity & Access Management Lab (Meridian Health Group)
-
-**Type:** Identity & Access Management | Microsoft Entra ID | Zero Trust Architecture
-**Frameworks:** NIST SP 800-207 Zero Trust Architecture | HIPAA Security Rule | NIST CSF 2.0 | CIS Controls v8
-
-Building on the Meridian Health Group engagement from Project 3, I extended the audit findings into a full identity and access buildout for the same organization. Built the IAM lab in Microsoft Entra ID with the goal of making sure the right people have access to the right things and nobody has more than they need.
-
-Set up 10 user accounts across 6 departments, organized into 10 security groups, with roles assigned on least privilege. Enabled MFA for all users, documented 7 conditional access policies, and built a full Joiners-Movers-Leavers workflow so the organization always knows who has access and why.
-
-**Key Actions:**
-- Created 10 user accounts (employees, service accounts, external vendor) with RBAC and least privilege on every role
-- Configured 10 security groups used to target authentication policies and Microsoft 365 permissions
-- Documented 7 Conditional Access policies: MFA for all users, blocking outdated login methods, geo-restricting access, requiring compliant devices for admin accounts, and restricting vendor access
-- Built a JML workflow: accounts enabled within 24 hours of hire, disabled within 4 hours of termination
-- Ran two quarterly access review cycles, reviewed every role assignment, documented decisions, and removed unneeded access
-- Flagged 6 security findings with risk ratings and a prioritized fix plan aligned to HIPAA and NIST
-
-[View IAM Lab Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/zero-trust-iam-lab/MHG_ZeroTrust_IAM_Lab_Report.docx) | [View RBAC Matrix](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/zero-trust-iam-lab/MHG_RBAC_Matrix_ZeroTrust_IAM.xlsx)
 
 ---
 
@@ -162,7 +162,7 @@ Ran a vulnerability assessment for a mid-size organization. Identified attack su
 - Prioritized findings by risk rating and business impact
 - Produced a formal report with a remediation roadmap
 
-[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/incident-reports/Vulnerability_Assessment_Report.pdf)
+[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/Vulnerability_Assessment_Report.pdf)
 
 ---
 
@@ -178,7 +178,7 @@ Analyzed a denial-of-service attack where a threat actor flooded an internal net
 - Deployed IDS/IPS and network monitoring for ongoing detection
 - Staged service restoration, prioritizing critical systems first
 
-[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/incident-reports/NIST_CSF_Portfolio_Report.pdf)
+[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/NIST_CSF_Portfolio_Report.pdf)
 
 ---
 
@@ -194,7 +194,7 @@ Investigated a brute force attack alongside an abnormal network traffic event. C
 - Documented the timeline, affected systems, and evidence chain
 - Recommended account lockout policies, MFA enforcement, and network segmentation
 
-[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/incident-reports/Brute_Force_Security_Incident_Report.docx)
+[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/Brute_Force_Security_Incident_Report.docx)
 
 ---
 
@@ -210,7 +210,7 @@ Analyzed a SYN flood attack targeting a web-facing server. Identified the attack
 - Recommended SYN cookies, rate limiting, and firewall ACL updates
 - Produced a formal incident report with timeline and remediation plan
 
-[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/incident-reports/SYN_Flood_Incident_Report_Completed.docx)
+[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/SYN_Flood_Incident_Report_Completed.docx)
 
 ---
 
@@ -220,9 +220,9 @@ Analyzed a SYN flood attack targeting a web-facing server. Identified the attack
 
 Three short labs from the certificate coursework, each demonstrating a different fundamental: querying, access control, and automation.
 
-- **SQL Filters for Security Investigation:** wrote targeted SQL queries (AND, OR, NOT LIKE) against login and employee databases to isolate after-hours failed logins, suspicious date ranges, and logins from unexpected geographies. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/incident-reports/Apply_Filters_to_SQL_Queries.pdf)
-- **File Permissions in Linux:** audited and corrected file system permissions for a research team, using `ls -la` and `chmod` to remove unauthorized access and enforce least privilege. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/incident-reports/File_Permissions_in_Linux.pdf)
-- **Algorithm for File Updates in Python:** built a script to automate allow-list management for an IP-based access control system, reading, filtering, and rewriting the list programmatically. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/incident-reports/Algorithm_for_File_Updates_in_Python.pdf)
+- **SQL Filters for Security Investigation:** wrote targeted SQL queries (AND, OR, NOT LIKE) against login and employee databases to isolate after-hours failed logins, suspicious date ranges, and logins from unexpected geographies. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/Apply_Filters_to_SQL_Queries.pdf)
+- **File Permissions in Linux:** audited and corrected file system permissions for a research team, using `ls -la` and `chmod` to remove unauthorized access and enforce least privilege. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/File_Permissions_in_Linux.pdf)
+- **Algorithm for File Updates in Python:** built a script to automate allow-list management for an IP-based access control system, reading, filtering, and rewriting the list programmatically. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/Algorithm_for_File_Updates_in_Python.pdf)
 
 ---
 
