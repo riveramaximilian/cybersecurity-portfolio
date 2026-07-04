@@ -144,7 +144,7 @@ Foundational labs from the Google Cybersecurity Certificate, included as support
 
 - **GRC & Compliance:** HIPAA Security Rule · NIST CSF · NIST RMF · NIST SP 800-30/800-53/800-207 · ISO 27001:2022 · PCI DSS · SOC 2 Type II · Vendor Risk Assessment · Compliance Mapping · Risk Register · Policy Writing · Audit Readiness
 - **Security & Access Governance:** Identity & Access Management (IAM) · Zero Trust Architecture · RBAC · Access Reviews · Microsoft Entra ID · Vulnerability Assessment · Threat Modeling
-- **Additional Technical:** Incident Response (NIST SP 800-61) · Splunk · Chronicle · Wazuh · Suricata · Wireshark · SQL (MariaDB) · Python · Linux CLI
+- **Additional Technical:** Incident Response (NIST SP 800-61) · SQL (MariaDB) · Python · Linux CLI
 - **Enterprise Systems:** SAP · AIMS · SmartSolve · Microsoft Office (Advanced Excel)
 
 ---
@@ -160,5 +160,6 @@ Foundational labs from the Google Cybersecurity Certificate, included as support
 
 ## Contact
 
+- **Location:** Wildwood, Florida. Open to remote work.
 - **LinkedIn:** [linkedin.com/in/maximilianrivera](https://www.linkedin.com/in/maximilianrivera)
 - **Email:** riveramaximilian@gmail.com
