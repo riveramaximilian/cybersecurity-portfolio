@@ -142,7 +142,7 @@ Ran a SOC 2 readiness assessment ahead of a Type II audit for a mid-size technol
 - Issued a formal management letter documenting each gap and its associated risk
 - Built a 12-month phased remediation roadmap to close gaps ahead of the audit window
 
-[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/soc2-readiness/Crestline_SOC2_Readiness_Assessment.pdf)
+[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/soc2-readiness-assessment/SOC2-Readiness-Assessment-Crestline-Technology-Partners.pdf)
 
 ---
 
@@ -182,39 +182,7 @@ Analyzed a denial-of-service attack where a threat actor flooded an internal net
 
 ---
 
-### 10. Incident Report (Brute Force & Network Traffic Analysis)
-
-**Type:** Security Incident Response | **Tools:** Wireshark | tcpdump | Network Protocol Analysis
-
-Investigated a brute force attack alongside an abnormal network traffic event. Captured and analyzed packet data to identify attack vectors, document findings, and recommend hardening measures.
-
-**Key Actions:**
-- Identified failed authentication patterns consistent with credential stuffing
-- Analyzed PCAP data to trace attack origin and lateral movement indicators
-- Documented the timeline, affected systems, and evidence chain
-- Recommended account lockout policies, MFA enforcement, and network segmentation
-
-[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/Brute_Force_Security_Incident_Report.docx)
-
----
-
-### 11. Incident Report (SYN Flood Attack Response)
-
-**Type:** Network Security Incident | **Framework:** NIST SP 800-61 | TCP/IP Protocol Analysis
-
-Analyzed a SYN flood attack targeting a web-facing server. Identified the attack pattern through packet analysis, documented the incident lifecycle, and produced hardening recommendations to prevent recurrence.
-
-**Key Actions:**
-- Identified half-open connection accumulation consistent with a SYN flood
-- Traced attack traffic and documented source patterns
-- Recommended SYN cookies, rate limiting, and firewall ACL updates
-- Produced a formal incident report with timeline and remediation plan
-
-[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/SYN_Flood_Incident_Report_Completed.docx)
-
----
-
-### 12. Security Fundamentals Practice
+### 10. Security Fundamentals Practice
 
 **Type:** Coursework Labs | **Tools:** SQL (MariaDB) · Linux CLI · Python
 
