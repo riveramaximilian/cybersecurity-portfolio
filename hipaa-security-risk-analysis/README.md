@@ -147,7 +147,7 @@ OCR civil monetary penalties: up to $1.9M per violation category per year if una
 hipaa-security-risk-analysis/
 ├── README.md
 ├── SunRidge_HIPAA_SRA_2025.xlsx                    <- Main SRA workbook (7 tabs)
-└── SunRidge_HIPAA_SRA_Executive_Report_2025.docx   <- Executive report
+└── SunRidge_HIPAA_SRA_Executive_Report_2025.pdf   <- Executive report
 ```
 
 ---
