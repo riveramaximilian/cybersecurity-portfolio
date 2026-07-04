@@ -1,6 +1,6 @@
 # GRC & Compliance Portfolio
 
-**Maximilian Rivera** | GRC & Compliance | HIPAA · SOC 2 · ISO 27001 · PCI DSS | Security Operations & Incident Response | Prior U.S. Government Clearance
+**Maximilian Rivera** | GRC & Compliance | HIPAA · SOC 2 · ISO 27001 · PCI DSS | Prior U.S. Government Clearance
 
 ---
 
@@ -15,6 +15,8 @@ Google Cybersecurity Certificate, June 2026. Lean Six Sigma Yellow Belt. I'm loo
 ---
 
 ## GRC & Compliance Projects
+
+*Note: these are self-directed projects built on fictional organizations, produced to professional deliverable standards.*
 
 ### 1. Third-Party Vendor Risk Assessment (ClearPath Health)
 
@@ -50,30 +52,12 @@ Built a compliance mapping matrix for a regional medical center, mapping 33 HIPA
 
 ---
 
-### 3. Internal Security Audit (Meridian Health Group)
-
-**Type:** Controls & Compliance Assessment
-**Frameworks:** NIST CSF | PCI DSS | GDPR | SOC Type 1 & 2
-**Risk Score:** 8/10 (High)
-
-Ran an internal IT security audit for a mid-sized healthcare organization. Evaluated 14 security controls across three regulatory frameworks, found critical gaps in encryption, access control, and disaster recovery, and produced a formal checklist with prioritized remediation.
-
-**Key Findings:**
-- 9 of 14 controls not in place, including encryption, IDS, and least privilege
-- Full PCI DSS non-compliance: no encryption, no password management
-- Partial GDPR compliance: breach notification exists, data classification does not
-- Recommendations covered encryption, IDS deployment, DR planning, and separation of duties
-
-[View Checklist](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/audits/MHG_Checklist.pdf)
-
----
-
-### 4. Zero Trust Identity & Access Management Lab (Meridian Health Group)
+### 3. Zero Trust Identity & Access Management Lab (Meridian Health Group)
 
 **Type:** Identity & Access Management | Microsoft Entra ID | Zero Trust Architecture
 **Frameworks:** NIST SP 800-207 Zero Trust Architecture | HIPAA Security Rule | NIST CSF 2.0 | CIS Controls v8
 
-Building on the Meridian Health Group audit in Project 3, I extended those findings into a full identity and access buildout for the same organization. Built the IAM lab in Microsoft Entra ID with the goal of making sure the right people have access to the right things and nobody has more than they need.
+Built a full identity and access management lab for a healthcare organization using Microsoft Entra ID, with the goal of making sure the right people have access to the right things and nobody has more than they need.
 
 Set up 10 user accounts across 6 departments, organized into 10 security groups, with roles assigned on least privilege. Enabled MFA for all users, documented 7 conditional access policies, and built a full Joiners-Movers-Leavers workflow so the organization always knows who has access and why.
 
@@ -89,7 +73,7 @@ Set up 10 user accounts across 6 departments, organized into 10 security groups,
 
 ---
 
-### 5. HIPAA Security Risk Analysis (SunRidge Health Partners)
+### 4. HIPAA Security Risk Analysis (SunRidge Health Partners)
 
 **Type:** GRC | Security Risk Analysis
 **Frameworks:** HIPAA Security Rule (45 CFR Part 164) | NIST SP 800-30 Rev. 1 | NIST CSF 2.0
@@ -106,14 +90,14 @@ Ran a full HIPAA Security Risk Analysis for an 85,000-patient health network. In
 **Deliverables:**
 - Risk register with 10 scored risk scenarios
 - 30-control HIPAA gap analysis
-- 4-phase remediation roadmap, 365 days, roughly $303,500
+- 4-phase remediation roadmap over 365 days, itemized by line item to roughly $303,500 (detailed in the workbook)
 - Executive summary mapped against the HHS HIPAA Security Rule NPRM
 
 [View SRA Workbook](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/hipaa-security-risk-analysis/SunRidge_HIPAA_SRA_2025.xlsx) | [View Executive Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/hipaa-security-risk-analysis/SunRidge_HIPAA_SRA_Executive_Report_2025.docx)
 
 ---
 
-### 6. Policy Development & GRC Lab (VoltEdge Systems)
+### 5. Policy Development & GRC Lab (VoltEdge Systems)
 
 **Type:** GRC | Security Policy Writing | Risk Management
 **Frameworks:** NIST CSF | NIST SP 800-30 | ISO 27001 | HIPAA-aligned
@@ -130,7 +114,7 @@ Drafted two production-ready security policies and a full GRC risk and complianc
 
 ---
 
-### 7. SOC 2 Readiness Assessment (Crestline Technology Partners)
+### 6. SOC 2 Readiness Assessment (Crestline Technology Partners)
 
 **Type:** GRC | Audit Readiness
 **Frameworks:** SOC 2 Type II | Trust Services Criteria (CC6, CC7, CC9)
@@ -146,60 +130,22 @@ Ran a SOC 2 readiness assessment ahead of a Type II audit for a mid-size technol
 
 ---
 
-## Google Cybersecurity Certificate: Applied Labs
+## Certificate Coursework (Google Cybersecurity Certificate)
 
-Completed as part of the Google Cybersecurity Certificate program. These labs cover incident response, network analysis, and security fundamentals, and back up the technical literacy behind the GRC work above.
+Foundational labs from the Google Cybersecurity Certificate, included as supporting technical background rather than GRC projects.
 
-### 8. Vulnerability Assessment Report
-
-**Type:** Risk & Vulnerability Assessment | **Framework:** NIST SP 800-30 | Threat Modeling
-
-Ran a vulnerability assessment for a mid-size organization. Identified attack surfaces, scored likelihood and impact of key threats, and produced a formal risk assessment with prioritized remediation.
-
-**Key Actions:**
-- Categorized vulnerabilities across network, application, and physical layers
-- Applied NIST SP 800-30 threat likelihood and impact scoring
-- Prioritized findings by risk rating and business impact
-- Produced a formal report with a remediation roadmap
-
-[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/Vulnerability_Assessment_Report.pdf)
-
----
-
-### 9. Incident Report (DoS Attack via ICMP Flood)
-
-**Type:** Incident Response & Analysis | **Framework:** NIST Cybersecurity Framework (CSF)
-
-Analyzed a denial-of-service attack where a threat actor flooded an internal network with ICMP packets through an unconfigured firewall, causing a two-hour outage. Applied all five NIST CSF functions to document the incident and build a remediation plan.
-
-**Key Actions:**
-- Identified the misconfigured firewall as the root vulnerability
-- Implemented ICMP rate limiting and source IP verification
-- Deployed IDS/IPS and network monitoring for ongoing detection
-- Staged service restoration, prioritizing critical systems first
-
-[View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/NIST_CSF_Portfolio_Report.pdf)
-
----
-
-### 10. Security Fundamentals Practice
-
-**Type:** Coursework Labs | **Tools:** SQL (MariaDB) · Linux CLI · Python
-
-Three short labs from the certificate coursework, each demonstrating a different fundamental: querying, access control, and automation.
-
-- **SQL Filters for Security Investigation:** wrote targeted SQL queries (AND, OR, NOT LIKE) against login and employee databases to isolate after-hours failed logins, suspicious date ranges, and logins from unexpected geographies. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/Apply_Filters_to_SQL_Queries.pdf)
-- **File Permissions in Linux:** audited and corrected file system permissions for a research team, using `ls -la` and `chmod` to remove unauthorized access and enforce least privilege. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/File_Permissions_in_Linux.pdf)
-- **Algorithm for File Updates in Python:** built a script to automate allow-list management for an IP-based access control system, reading, filtering, and rewriting the list programmatically. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/Algorithm_for_File_Updates_in_Python.pdf)
+- **Vulnerability Assessment (NIST SP 800-30):** attack-surface identification, likelihood and impact scoring, and prioritized remediation. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/Vulnerability_Assessment_Report.pdf)
+- **Incident Report, DoS via ICMP Flood (NIST CSF):** applied all five CSF functions to document and remediate a denial-of-service outage. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/NIST_CSF_Portfolio_Report.pdf)
+- **Security fundamentals (SQL, Linux, Python):** SQL investigation queries, Linux file-permission hardening, and a Python allow-list automation script. [SQL](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/Apply_Filters_to_SQL_Queries.pdf) · [Linux](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/File_Permissions_in_Linux.pdf) · [Python](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/Algorithm_for_File_Updates_in_Python.pdf)
 
 ---
 
 ## Skills & Tools
 
-- **GRC & Compliance:** HIPAA Security Rule · NIST CSF · NIST RMF · NIST SP 800-30/800-53/800-207 · ISO 27001:2022 · PCI DSS · SOC 2 Type II · Vendor Risk Assessment · Compliance Mapping · Risk Register · Policy Writing
-- **Security Operations:** Incident Response (NIST SP 800-61) · IDS Rule Tuning · Threat Detection · Vulnerability Assessment · Threat Modeling · Access Control · Identity & Access Management (IAM) · Zero Trust Architecture · RBAC
-- **Security Tools:** Splunk (SPL) · Chronicle (YARA-L) · Wazuh · Suricata · Wireshark · tcpdump · Linux CLI · SQL (MariaDB) · Python · Microsoft Entra ID
-- **Enterprise Systems:** SAP · AIMS · SmartSolve · Microsoft Office (Advanced Excel) · RF Warehouse Systems
+- **GRC & Compliance:** HIPAA Security Rule · NIST CSF · NIST RMF · NIST SP 800-30/800-53/800-207 · ISO 27001:2022 · PCI DSS · SOC 2 Type II · Vendor Risk Assessment · Compliance Mapping · Risk Register · Policy Writing · Audit Readiness
+- **Security & Access Governance:** Identity & Access Management (IAM) · Zero Trust Architecture · RBAC · Access Reviews · Microsoft Entra ID · Vulnerability Assessment · Threat Modeling
+- **Additional Technical:** Incident Response (NIST SP 800-61) · Splunk · Chronicle · Wazuh · Suricata · Wireshark · SQL (MariaDB) · Python · Linux CLI
+- **Enterprise Systems:** SAP · AIMS · SmartSolve · Microsoft Office (Advanced Excel)
 
 ---
 
