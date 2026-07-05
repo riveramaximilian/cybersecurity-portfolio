@@ -52,24 +52,24 @@ Built a compliance mapping matrix for a regional medical center, mapping 33 HIPA
 
 ---
 
-### 3. Zero Trust Identity & Access Management Lab (Meridian Health Group)
+### 3. Zero Trust Identity & Access Management Design (Meridian Health Group)
 
 **Type:** Identity & Access Management | Microsoft Entra ID | Zero Trust Architecture
 **Frameworks:** NIST SP 800-207 Zero Trust Architecture | HIPAA Security Rule | NIST CSF 2.0 | CIS Controls v8
 
-Built a full identity and access management lab for a healthcare organization using Microsoft Entra ID, with the goal of making sure the right people have access to the right things and nobody has more than they need.
+Designed a full identity and access management architecture for a healthcare organization on Microsoft Entra ID, applying least privilege and Zero Trust so the right people have access to the right things and nobody has more than they need.
 
-Set up 10 user accounts across 6 departments, organized into 10 security groups, with roles assigned on least privilege. Enabled MFA for all users, documented 7 conditional access policies, and built a full Joiners-Movers-Leavers workflow so the organization always knows who has access and why.
+Specified 10 user accounts across 6 departments, organized into 10 security groups with roles assigned on least privilege. Defined MFA for all users, 7 conditional access policies, and a full Joiners-Movers-Leavers workflow so the organization always knows who has access and why.
 
 **Key Actions:**
-- Created 10 user accounts (employees, service accounts, external vendor) with RBAC and least privilege on every role
-- Configured 10 security groups used to target authentication policies and Microsoft 365 permissions
-- Documented 7 Conditional Access policies: MFA for all users, blocking outdated login methods, geo-restricting access, requiring compliant devices for admin accounts, and restricting vendor access
-- Built a JML workflow: accounts enabled within 24 hours of hire, disabled within 4 hours of termination
-- Ran two quarterly access review cycles, reviewed every role assignment, documented decisions, and removed unneeded access
-- Flagged 6 security findings with risk ratings and a prioritized fix plan aligned to HIPAA and NIST
+- Designed 10 user accounts (employees, service accounts, external vendor) with RBAC and least privilege on every role
+- Defined 10 security groups to target authentication policies and Microsoft 365 permissions
+- Specified 7 Conditional Access policies: MFA for all users, blocking outdated login methods, geo-restricting access, requiring compliant devices for admin accounts, and restricting vendor access
+- Modeled a Joiners-Movers-Leavers workflow: accounts enabled within 24 hours of hire, disabled within 4 hours of termination
+- Defined two quarterly access review cycles covering every role assignment, with documented decisions and removal of unneeded access
+- Documented 6 security findings with risk ratings and a prioritized fix plan aligned to HIPAA and NIST
 
-[View IAM Lab Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/zero-trust-iam-lab/MHG_ZeroTrust_IAM_Lab_Report.docx) | [View RBAC Matrix](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/zero-trust-iam-lab/MHG_RBAC_Matrix_ZeroTrust_IAM.xlsx)
+[View IAM Design Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/zero-trust-iam-lab/MHG_ZeroTrust_IAM_Lab_Report.pdf) | [View RBAC Matrix](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/zero-trust-iam-lab/MHG_RBAC_Matrix_ZeroTrust_IAM.xlsx)
 
 ---
 
@@ -93,7 +93,7 @@ Ran a full HIPAA Security Risk Analysis for an 85,000-patient health network. In
 - 4-phase remediation roadmap over 365 days, itemized by line item to roughly $303,500 (detailed in the workbook)
 - Executive summary mapped against the HHS HIPAA Security Rule NPRM
 
-[View SRA Workbook](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/hipaa-security-risk-analysis/SunRidge_HIPAA_SRA_2025.xlsx) | [View Executive Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/hipaa-security-risk-analysis/SunRidge_HIPAA_SRA_Executive_Report_2025.docx)
+[View SRA Workbook](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/hipaa-security-risk-analysis/SunRidge_HIPAA_SRA_2025.xlsx) | [View Executive Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/hipaa-security-risk-analysis/SunRidge_HIPAA_SRA_Executive_Report_2025.pdf)
 
 ---
 
