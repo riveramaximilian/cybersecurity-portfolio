@@ -8,7 +8,7 @@
 
 I'm a U.S. Air Force veteran with a prior government security clearance and five years running compliance operations in a HIPAA-regulated pharmaceutical supply chain. I've served as compliance owner for QA product hold events: collecting audit evidence, applying quarantine controls, and safeguarding PHI in coordination with regional management.
 
-Outside that day job, I built the GRC portfolio below, covering HIPAA, NIST CSF, ISO 27001, PCI DSS, and SOC 2. It includes a completed third-party vendor risk assessment, a 33-control compliance mapping matrix, and a full HIPAA security risk analysis for an 85,000-patient network.
+Outside that day job, I built the GRC portfolio below, covering HIPAA, NIST CSF, ISO 27001, PCI DSS, and SOC 2. It includes a completed third-party vendor risk assessment, a 33-control compliance mapping matrix, a full HIPAA security risk analysis for an 85,000-patient network, and a PHI data-flow and tracking-technology privacy assessment.
 
 Google Cybersecurity Certificate, June 2026. Lean Six Sigma Yellow Belt. I'm looking for compliance analyst, GRC analyst, and HIPAA-focused roles where this operational and applied GRC background delivers value from day one.
 
@@ -130,19 +130,32 @@ Ran a SOC 2 readiness assessment ahead of a Type II audit for a mid-size technol
 
 ---
 
-## Certificate Coursework (Google Cybersecurity Certificate)
+### 7. PHI Data-Flow & Third-Party Tracking Privacy Assessment (NorthBay TeleHealth)
 
-Foundational labs from the Google Cybersecurity Certificate, included as supporting technical background rather than GRC projects.
+**Type:** Data Privacy | Data Mapping | Third-Party Risk
+**Frameworks:** HIPAA Privacy / Security / Breach Rules (45 CFR Parts 160 & 164) | HHS OCR Online Tracking Guidance | FTC Health Breach Notification Rule | NIST Privacy Framework
 
-- **Vulnerability Assessment (NIST SP 800-30):** attack-surface identification, likelihood and impact scoring, and prioritized remediation. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/Vulnerability_Assessment_Report.pdf)
-- **Incident Report, DoS via ICMP Flood (NIST CSF):** applied all five CSF functions to document and remediate a denial-of-service outage. [View Report](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/NIST_CSF_Portfolio_Report.pdf)
-- **Security fundamentals (SQL, Linux, Python):** SQL investigation queries, Linux file-permission hardening, and a Python allow-list automation script. [SQL](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/Apply_Filters_to_SQL_Queries.pdf) · [Linux](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/File_Permissions_in_Linux.pdf) · [Python](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/google-cert-labs/Algorithm_for_File_Updates_in_Python.pdf)
+Mapped where PHI leaks to third-party tracking technologies for a direct-to-consumer telehealth provider, the same failure pattern behind the FTC actions against GoodRx and BetterHelp. Built a data inventory and Records of Processing Activities (RoPA), audited every third-party tag against the pages it fired on, and traced each disclosure to a vendor and a legal basis.
+
+**Key Findings:**
+- 7 findings: 3 Critical, 1 High, 3 Medium
+- Critical: Meta Pixel disclosing behavioral-health bookings and hashed email to Meta, with no BAA and no lawful basis
+- Critical: GA4 ingesting condition-bearing URLs, client ID, and IP; TikTok pixel firing on the prescription-refill page
+- Flagged the historical disclosures as a potential reportable breach requiring a 4-factor Breach Notification Rule assessment
+
+**Deliverables:**
+- Data inventory and Records of Processing Activities (RoPA)
+- Data-flow map and third-party tracker audit
+- Gap register mapped to HIPAA rules and OCR guidance, with severity
+- Phased remediation roadmap and a consent/authorization decision workflow
+
+[View Full Assessment](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/phi-tracking-privacy-assessment/README.md) | [View Data-Flow Map](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/phi-tracking-privacy-assessment/03-data-flow-map.md) | [View Gap Register](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/phi-tracking-privacy-assessment/06-gap-assessment.md) | [View Remediation Roadmap](https://github.com/riveramaximilian/cybersecurity-portfolio/blob/main/phi-tracking-privacy-assessment/07-remediation-roadmap.md)
 
 ---
 
 ## Skills & Tools
 
-- **GRC & Compliance:** HIPAA Security Rule · NIST CSF · NIST RMF · NIST SP 800-30/800-53/800-207 · ISO 27001:2022 · PCI DSS · SOC 2 Type II · Vendor Risk Assessment · Compliance Mapping · Risk Register · Policy Writing · Audit Readiness
+- **GRC & Compliance:** HIPAA Security Rule · NIST CSF · NIST RMF · NIST SP 800-30/800-53/800-207 · ISO 27001:2022 · PCI DSS · SOC 2 Type II · Vendor Risk Assessment · Compliance Mapping · Data Mapping & RoPA · Risk Register · Policy Writing · Audit Readiness
 - **Security & Access Governance:** Identity & Access Management (IAM) · Zero Trust Architecture · RBAC · Access Reviews · Microsoft Entra ID · Vulnerability Assessment · Threat Modeling
 - **Additional Technical:** Incident Response (NIST SP 800-61) · SQL (MariaDB) · Python · Linux CLI
 - **Enterprise Systems:** SAP · AIMS · SmartSolve · Microsoft Office (Advanced Excel)
